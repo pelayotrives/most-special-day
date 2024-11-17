@@ -1,0 +1,76 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Output directories
+dist/
+dist-ssr/
+build/
+out/
+.cache/
+
+# Testing
+coverage/
+.nyc_output/
+.vitest/
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lock
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Vite-specific
+# Exclude temporary Vite config files generated during build
+vite.config.ts.timestamp-*
+
+# CSS Cache and tools
+*.css.map
+
+# IDEs and editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+.env.*
+!.env.example
