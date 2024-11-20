@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "title": "Lorem Ipsum 1",
-    "subtitle": "Subtitle 1",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
+    "title": "Blanco Hotel SPA",
+    "subtitle": "La Colorada s/n, 33710 Navia",
+    "description": "El Blanco Hotel Spa es un establecimiento de 4 estrellas situado en Navia. Este hotel de 4 estrellas cuenta con WiFi gratuita, recepción 24 horas y spa. También hay un restaurante. Las habitaciones del hotel están equipadas con TV. Todas las habitaciones incluyen baño privado con bañera.",
+    "image": "/images/hotel-blanco.jpg",
     "buttonText": "Ver más",
-    "buttonLink": "#"
+    "buttonLink": "https://www.booking.com/hotel/es/blanco.es.html?aid=356935&label=metagha-link-MRES-hotel-97363_dev-desktop_los-1_bw-1_dow-Thursday_defdate-1_room-0_gstadt-2_rateid-public_aud-7380588529_gacid-21404702604_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241121_ppt-_lp-2724_r-1456741553501140429&sid=946afb367556c614e723695f77075ab3&checkin=2025-07-11&checkout=2025-07-13&dest_id=-393873&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1732137982&srpvid=1c0796baee77022a&type=total&ucfs=1&#no_availability_msg"
   },
   {
     "id": 2,
-    "title": "Lorem Ipsum 2",
-    "subtitle": "Subtitle 2",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
+    "title": "Hotel Casa Xusto",
+    "subtitle": "Travesia de Prendones, 8, 33750 La Caridad",
+    "description": "El Hotel Rural Casa Xusto se encuentra en la pequeña localidad de La Caridad y está rodeado de montañas. El establecimiento ofrece vistas al jardín y ocupa una casa del siglo XIX con paredes de piedra y suelo de madera.",
+    "image": "/images/hotel-casa-xusto.jpg",
     "buttonText": "Ver más",
-    "buttonLink": "#"
+    "buttonLink": "https://www.booking.com/hotel/es/casa-xusto.es.html?aid=356935&label=metagha-link-MRES-hotel-97363_dev-desktop_los-1_bw-1_dow-Thursday_defdate-1_room-0_gstadt-2_rateid-public_aud-7380588529_gacid-21404702604_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241121_ppt-_lp-2724_r-1456741553501140429&sid=946afb367556c614e723695f77075ab3&checkin=2025-07-11&checkout=2025-07-13&dest_id=357954&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1732138048&srpvid=7b4f96d58b2b010b&type=total&ucfs=1&#no_availability_msg"
   },
   {
     "id": 3,
-    "title": "Lorem Ipsum 3",
-    "subtitle": "Subtitle 3",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
+    "title": "Hotel Casona Naviega",
+    "subtitle": "Avenida de los Emigrantes, 37, 33710 Navia",
+    "description": "El Naviega Guest House ofrece vistas al río Navia y se encuentra a solo 500 metros del centro de la localidad de Navia. A 2,5 km hay una pequeña playa rodeada de pinos en la costa asturiana. Las habitaciones de la Casona Naviega presentan una decoración individual de estilo clásico inglés con suelo de madera. ",
+    "image": "/images/hotel-casona-naviega.jpg",
     "buttonText": "Ver más",
-    "buttonLink": "#"
+    "buttonLink": "https://www.booking.com/hotel/es/casona-naviega.es.html?aid=356935&label=metagha-link-MRES-hotel-328106_dev-desktop_los-1_bw-1_dow-Thursday_defdate-1_room-0_gstadt-2_rateid-public_aud-7380588529_gacid-21404702604_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241121_ppt-_lp-2724_r-18173678974412594379&sid=946afb367556c614e723695f77075ab3&checkin=2025-07-11&checkout=2025-07-13&dest_id=-393873&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1732137907&srpvid=01ee9694f52b020f&type=total&ucfs=1&#no_availability_msg"
   },
   {
     "id": 4,
-    "title": "Lorem Ipsum 4",
-    "subtitle": "Subtitle 4",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
+    "title": "Palacio Arias",
+    "subtitle": "Avenida Emigrantes, 11, 33710 Navia",
+    "description": "Este hotel de lujo está situado en un antiguo palacio indiano ubicado a 1,5 km de la playa de Navia. Está rodeado de jardines preciosos y dispone de habitaciones elegantes con conexión Wi-Fi gratuita y terraza.",
+    "image": "/images/hotel-palacio-arias.jpg",
     "buttonText": "Ver más",
-    "buttonLink": "#"
+    "buttonLink": "https://www.booking.com/hotel/es/palacio-arias-navia.es.html?aid=356935&label=metagha-link-MRES-hotel-97363_dev-desktop_los-1_bw-1_dow-Thursday_defdate-1_room-0_gstadt-2_rateid-public_aud-7380588529_gacid-21404702604_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241121_ppt-_lp-2724_r-1456741553501140429&sid=946afb367556c614e723695f77075ab3&checkin=2025-07-11&checkout=2025-07-13&dest_id=380914&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1732138284&srpvid=e0339752efa50347&type=total&ucfs=1&#no_availability_msg"
   }
 ]

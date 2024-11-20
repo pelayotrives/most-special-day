@@ -15,7 +15,7 @@ import BusImage from "/images/bus.png";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { LucideIcon, MapPin, BusFront, House, MessageSquareHeart, Music, Gift } from 'lucide-react';
+import { LucideIcon, MapPin, BusFront, House, MessageSquareHeart, Music, Gift, TreePine, Waves, Footprints } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -192,10 +192,11 @@ function App() {
   }, []);
 
   const iconMap: { [key: string]: LucideIcon } = {
-    MapPin: MapPin,
-    BusFront: BusFront,
+    TreePine: TreePine,
+    Waves: Waves,
     House: House,
-    MessageSquareHeart: MessageSquareHeart,
+    Footprints: Footprints,
+
   };
 
   return (
@@ -255,10 +256,10 @@ function App() {
           {/* BUTTONS */}
           <div className="flex flex-col gap-6 pb-8 sm:flex-row">
             <div data-aos="fade-up" data-aos-delay="900">
-              <Button text="Ver Iglesia" link="#" />
+              <Button text="Ver iglesia" link="https://www.google.es/maps/place/La+Caridad,+El+Franco,+Asturias/@43.554059,-6.8389653,15z/data=!3m1!4b1!4m6!3m5!1s0xd316186c5329db7:0x77ca66d1f4ae4bc!8m2!3d43.5512766!4d-6.8291853!16s%2Fm%2F05q8zf4?hl=es&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D" />
             </div>
             <div data-aos="fade-up" data-aos-delay="1100">
-              <Button text="Ver Finca" link="#" />
+              <Button text="Ver finca" link="http://ferpelgastronomico.com/" />
             </div>
           </div>
           {/* MAP */}
@@ -268,7 +269,7 @@ function App() {
             className="relative rounded-lg w-full"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743676.7212841499!2d-6.505803732294989!3d43.272644129714145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cfa609eb09d%3A0xf8b5f32b7dc69e3a!2sAsturias!5e0!3m2!1sen!2ses!4v1732005528877!5m2!1sen!2ses"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11566.077636439637!2d-6.838965321191526!3d43.55405898770959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd316186c5329db7%3A0x77ca66d1f4ae4bc!2sLa%20Caridad%2C%20El%20Franco%2C%20Asturias!5e0!3m2!1ses!2ses!4v1732137141600!5m2!1ses!2ses"
               width="650"
               height="475"
               className="w-full border-none rounded-lg"
@@ -337,7 +338,7 @@ function App() {
           </div>
           {/* BUTTONS */}
           <div data-aos="fade-up" data-aos-delay="900" className="pb-8">
-            <Button text="Ver más" link="#" />
+            <Button text="Ver más hoteles" link="https://www.booking.com/searchresults.es.html?ss=Ortiguera%2C+Asturias%2C+Spain&ssne=El+Franco&ssne_untouched=El+Franco&label=gog235jc-1DCAMoRkIJZWwtZnJhbmNvSApYA2hGiAEBmAEKuAEHyAEM2AED6AEB-AECiAIBqAIDuAKGrfm5BsACAdICJGViYWEyMGNjLWY2NTYtNDAwZS1iNjJlLWQ0ZWU5YjA2Y2QyZdgCBOACAQ&aid=356980&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-394784&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=1&search_selected=true&search_pageview_id=27a3980b64160131&ac_meta=GhAyN2EzOTgwYjY0MTYwMTMxIAAoATICZW46CW9ydGlndWVyYUAASgBQAA%3D%3D&checkin=2025-07-11&checkout=2025-07-13&group_adults=2&no_rooms=1&group_children=0" />
           </div>
         </section>
         {/* SECTION 4 */}
@@ -384,7 +385,7 @@ function App() {
           </div>
           {/* BUTTON */}
           <div data-aos="fade-up" data-aos-delay="900" className="pb-8">
-            <Button text="Ver más" link="#" />
+            <Button text="Ver más sitios" link="https://www.turismoasturias.es/descubre/costa/villas-marineras/marinera-ortiguera" />
           </div>
         </section>
         {/* SECTION 5 */}
@@ -415,7 +416,7 @@ function App() {
           </div>
           {/* BUTTON */}
           <div data-aos="fade-up" data-aos-delay="900" className="pb-8">
-            <Button text="Ver lista" link="#" />
+            <Button text="Añadir a la lista" link="#" />
           </div>
         </section>
         {/* SECTION 6 */}

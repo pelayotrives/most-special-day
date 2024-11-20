@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "icon": "MapPin",
-    "title": "Lorem Ipsum",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
-    "link": "#"
+    "icon": "House",
+    "title": "Castro de Coaña",
+    "description": "Monumento Histórico Artístico y yacimiento arqueológico",
+    "image": "/images/cosas-castro-de-coana.jpg",
+    "link": "https://www.turismoasturias.es/descubre/cultura/museos-y-espacios-culturales/castros-y-espacios-arqueologicos/castro-de-coana"
   },
   {
     "id": 2,
-    "icon": "BusFront",
-    "title": "Lorem Ipsum",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
-    "link": "#"
+    "icon": "Waves",
+    "title": "Playa de Frexulfe",
+    "description": "Playa declarada Monumento Natural desde el año 2002",
+    "image": "/images/cosas-playa-frexulfe.jpg",
+    "link": "https://www.turismoasturias.es/descubre/costa/playas/playa-de-frexulfe-frejulfe"
   },
   {
     "id": 3,
-    "icon": "House",
-    "title": "Lorem Ipsum",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
-    "link": "#"
+    "icon": "Waves",
+    "title": "Playa de Arnielles",
+    "description": "Playa familiar de arenas finas en un entorno rural y tranquilo",
+    "image": "/images/cosas-playa-arnielles.jpg",
+    "link": "https://www.turismoasturias.es/descubre/costa/playas/playa-de-arnielles"
   },
   {
     "id": 4,
-    "icon": "MessageSquareHeart",
-    "title": "Lorem Ipsum",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
-    "link": "#"
+    "icon": "TreePine",
+    "title": "Reserva de Barayo",
+    "description": "Espacio protegido de gran valor ecológico con dunas",
+    "image": "/images/cosas-reserva-natural-barayo.jpg",
+    "link": "https://www.turismoasturias.es/descubre/naturaleza/espacios-protegidos/barayo"
   },
   {
     "id": 5,
-    "icon": "MapPin",
-    "title": "Lorem Ipsum",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
-    "link": "#"
+    "icon": "Footprints",
+    "title": "Senda Costa Naviega",
+    "description": "Preciosa ruta costera de 20km entre Navia y Puerto de Vega",
+    "image": "/images/cosas-senda-costa.naviega.jpg",
+    "link": "https://www.turismoasturias.es/-/blogs/senda-costa-naviega-un-bello-recorrido-por-el-litoral-de-asturias"
   },
   {
     "id": 6,
-    "icon": "BusFront",
-    "title": "Lorem Ipsum",
-    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
-    "image": "https://placehold.co/300x175",
-    "link": "#"
+    "icon": "Footprints",
+    "title": "Cascada de Xurbeo",
+    "description": "Ruta mágica por un valle en el Parque Histórico del Navia",
+    "image": "/images/cosas-cascada-de-xurbeo.jpg",
+    "link": "https://www.turismoasturias.es/descubre/naturaleza/rutas/senderismo/cascada-xurbeo"
   }
 ]

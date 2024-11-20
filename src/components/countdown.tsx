@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Countdown from 'react-countdown';
 
 const Timer = () => {
-  const targetDate = new Date("2025-07-13T00:00:00");
+  const targetDate = new Date("2025-07-12T00:00:00");
 
   const isMediumScreen = () => window.innerWidth >= 768;
   const [showSeconds, setShowSeconds] = useState(isMediumScreen());
