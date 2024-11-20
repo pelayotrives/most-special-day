@@ -8,11 +8,11 @@ import SlidesData from '../utils/slides-data.json';
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    breakpoint: { max: 4000, min: 3001 },
+    items: 4
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1025 },
     items: 3
   },
   tablet: {
@@ -20,7 +20,7 @@ const responsive = {
     items: 2
   },
   mobile: {
-    breakpoint: { max: 768, min: 0 },
+    breakpoint: { max: 767, min: 0 },
     items: 1
   }
 };
