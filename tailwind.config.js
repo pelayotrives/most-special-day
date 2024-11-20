@@ -54,6 +54,7 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
+        gold: "#A49333"
       },
       screens: {
         xs: "320px",
@@ -64,11 +65,11 @@ module.exports = {
         "2xl": "2560px",
       },
       fontSize: {
-        xs: ["0.75rem", { lineHeight: "1rem" }],
-        sm: ["0.875rem", { lineHeight: "1.25rem" }],
-        base: ["1rem", { lineHeight: "1.5rem" }],
-        lg: ["1.125rem", { lineHeight: "1.75rem" }],
-        xl: ["1.25rem", { lineHeight: "1.75rem" }],
+        xs: ["0.75rem", { lineHeight: "2" }],
+        sm: ["0.875rem", { lineHeight: "2" }],
+        base: ["1rem", { lineHeight: "2" }],
+        lg: ["1.125rem", { lineHeight: "2" }],
+        xl: ["1.25rem", { lineHeight: "2" }],
         "2xl": ["1.5rem", { lineHeight: "2rem" }],
         "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
         "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
