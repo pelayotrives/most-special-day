@@ -218,7 +218,7 @@ function App() {
           />
         </section>
         {/* COUNTDOWN */}
-        <section className="flex flex-col gap-8 text-center pb-40 md:pb-50">
+        <section className="flex flex-col gap-8 text-center pb-24 md:pb-50">
           <h2
             data-aos="fade-up"
             data-aos-delay="500"
@@ -231,7 +231,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 1 */}
-        <section id="localizacion" className="flex flex-col pb-40 md:pb-50">
+        <section id="localizacion" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={MapPin} text="Localización" />
@@ -279,7 +279,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 2 */}
-        <section id="transporte" className="flex flex-col pb-40 md:pb-50 overflow-x-hidden">
+        <section id="transporte" className="flex flex-col pb-24 md:pb-50 overflow-x-hidden">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={BusFront} text="Transporte" />
@@ -310,7 +310,7 @@ function App() {
           </section>
         </section>
         {/* SECTION 3 */}
-        <section id="alojamiento" className="flex flex-col pb-40 md:pb-50">
+        <section id="alojamiento" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={House} text="Alojamiento" />
@@ -341,7 +341,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 4 */}
-        <section id="sitios-de-interes" className="flex flex-col pb-40 md:pb-50">
+        <section id="sitios-de-interes" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={MessageSquareHeart} text="Sitios de interés" />
@@ -388,7 +388,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 5 */}
-        <section id="musica" className="flex flex-col pb-40 md:pb-50">
+        <section id="musica" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={Music} text="Música" />
@@ -419,7 +419,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 6 */}
-        <section id="regalo" className="flex flex-col pb-40 md:pb-50">
+        <section id="regalo" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={Gift} text="Regalo" />
