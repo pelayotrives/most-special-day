@@ -419,7 +419,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 6 */}
-        <section id="regalo" className="flex flex-col pb-24 md:pb-50">
+        <section id="regalo" className="flex flex-col pb-40 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay="500" className="pb-8">
             <Title icon={Gift} text="Regalo" />
