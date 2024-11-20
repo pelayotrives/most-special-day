@@ -1,6 +1,7 @@
 import Card from "./components/card";
 import Carousel from "./components/carousel";
 import Button from "./components/button";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Timer from "./components/countdown";
@@ -440,6 +441,8 @@ function App() {
             </p>
           </div>
         </section>
+        {/* FOOTER */}
+        <Footer />
       </main>
     </>
   );
