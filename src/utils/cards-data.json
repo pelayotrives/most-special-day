@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "icon": "MapPin",
+    "title": "Lorem Ipsum",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "icon": "BusFront",
+    "title": "Lorem Ipsum",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "icon": "House",
+    "title": "Lorem Ipsum",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "icon": "MessageSquareHeart",
+    "title": "Lorem Ipsum",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "icon": "MapPin",
+    "title": "Lorem Ipsum",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "link": "#"
+  },
+  {
+    "id": 6,
+    "icon": "BusFront",
+    "title": "Lorem Ipsum",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "link": "#"
+  }
+]

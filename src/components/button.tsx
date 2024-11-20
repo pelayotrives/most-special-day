@@ -5,7 +5,7 @@ interface ButtonProps {
   link: string;
 }
 
-export default function Button({ text, link }: ButtonProps) {
+const Button = ({ text, link }: ButtonProps) => {
   return (
     <a href={link} className="group flex flex-row items-center gap-3 w-full px-6 py-1.5 rounded-full border border-gold cursor-pointer justify-center sm:w-fit transition-all duration-300 ease-in-out hover:bg-gold hover:shadow-sm">
       <span className="text-gold font-inter text-lg group-hover:text-white">{text}</span>
@@ -13,3 +13,5 @@ export default function Button({ text, link }: ButtonProps) {
     </a>
   );
 }
+
+export default Button;

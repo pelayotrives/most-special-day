@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Lorem Ipsum 1",
+    "subtitle": "Subtitle 1",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "buttonText": "Ver más",
+    "buttonLink": "#"
+  },
+  {
+    "id": 2,
+    "title": "Lorem Ipsum 2",
+    "subtitle": "Subtitle 2",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "buttonText": "Ver más",
+    "buttonLink": "#"
+  },
+  {
+    "id": 3,
+    "title": "Lorem Ipsum 3",
+    "subtitle": "Subtitle 3",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "buttonText": "Ver más",
+    "buttonLink": "#"
+  },
+  {
+    "id": 4,
+    "title": "Lorem Ipsum 4",
+    "subtitle": "Subtitle 4",
+    "description": "Ipsum id nostrud velit ullamco est tempor exercitation qui anim elit occaecat.",
+    "image": "https://placehold.co/300x175",
+    "buttonText": "Ver más",
+    "buttonLink": "#"
+  }
+]
