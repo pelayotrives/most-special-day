@@ -9,13 +9,17 @@ const Main = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: 'ease-out-cubic',
+      offset: 250,
+      delay: 150,
       once: true,
     });
   }, []);
 
   return <App />;
 };
+
+export default Main;
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

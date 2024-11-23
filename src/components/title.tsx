@@ -1,3 +1,4 @@
+// COMPONENTS
 import { LucideIcon } from "lucide-react";
 
 interface TitleProps {

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Localización",
+    "url": "#localizacion"
+  },
+  {
+    "id": 2,
+    "name": "Transporte",
+    "url": "#transporte"
+  },
+  {
+    "id": 3,
+    "name": "Alojamiento",
+    "url": "#alojamiento"
+  },
+  {
+    "id": 4,
+    "name": "Sitios de Interés",
+    "url": "#sitios-de-interes"
+  },
+  {
+    "id": 5,
+    "name": "Música",
+    "url": "#musica"
+  },
+  {
+    "id": 6,
+    "name": "Regalo",
+    "url": "#regalo"
+  },
+  {
+    "id": 7,
+    "name": "Asistencia",
+    "url": "#asistencia"
+  }
+]

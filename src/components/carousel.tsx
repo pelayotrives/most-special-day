@@ -1,8 +1,8 @@
-// CardCarousel.js
-'use client';
-
+// LIBRARIES
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
+// COMPONENTS
 import CarouselSlide from './carousel-slide';
 import SlidesData from '../utils/slides-data.json';
 

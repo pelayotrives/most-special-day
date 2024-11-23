@@ -1,5 +1,5 @@
+// COMPONENTS
 import Button from './button';
-
 interface CarouselSlideProps {
   image: string;
   title: string;

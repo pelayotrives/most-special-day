@@ -1,4 +1,6 @@
+// LIBRARIES
 import { useState, useRef } from 'react';
+import toast from 'react-hot-toast';
 import { Volume2 } from 'lucide-react';
 
 const AudioButton = () => {
@@ -8,8 +10,10 @@ const AudioButton = () => {
   const togglePlay = () => {
     if (isPlaying) {
       audioRef.current.pause();
+      toast.success('¡Audio pausado!')
     } else {
       audioRef.current.play();
+      toast.success('¡Audio activado!')
     }
     setIsPlaying(!isPlaying);
   };

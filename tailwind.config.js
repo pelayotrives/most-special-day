@@ -54,7 +54,7 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-        gold: "#A49333"
+        gold: "#e0be88"
       },
       screens: {
         xs: "320px",

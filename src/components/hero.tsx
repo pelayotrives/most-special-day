@@ -1,5 +1,7 @@
+// LIBRARIES
 import { ChevronDown } from "lucide-react";
 
+// COMPONENTS
 import HeroImage from "/images/hero.jpg";
 import AudioButton from "./audio";
 
