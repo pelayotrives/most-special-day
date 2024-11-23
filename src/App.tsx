@@ -266,9 +266,9 @@ function App() {
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
             <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para vuestra comodidad, hemos organizado flota de autobuses para que podáis despreocuparos de conducir. Los turnos son los siguientes:</p>
-            <ul>
-              <li className="font-inter font-normal text-lg sm:text-xl leading-relaxed"><strong>Mañana:</strong> Salida desde [punto de encuentro] hacia [punto de encuentro].</li>
-              <li className="font-inter font-normal text-lg sm:text-xl leading-relaxed"><strong>Noche:</strong> Retorno desde [punto de encuentro] a [punto de encuentro].</li>
+            <ul className="list-disc mt-6 pl-10">
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida desde [punto de encuentro] hacia [punto de encuentro].</li>
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Noche:</strong> Retorno desde [punto de encuentro] a [punto de encuentro].</li>
             </ul>
             <br />
             <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Por favor, confirmad vuestra asistencia y si utilizaréis este servicio para coordinar los horarios en el <a href="#asistencia" className="text-gold underline">formulario de la última sección</a>.</p>

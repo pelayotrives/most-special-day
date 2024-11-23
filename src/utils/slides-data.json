@@ -10,17 +10,17 @@
   },
   {
     "id": 2,
-    "title": "Hotel Casa Xusto",
-    "subtitle": "Travesia de Prendones, 8, 33750 La Caridad",
-    "description": "El Hotel Rural Casa Xusto se encuentra en la pequeña localidad de La Caridad y está rodeado de montañas. El establecimiento ofrece vistas al jardín y ocupa una casa del siglo XIX con paredes de piedra y suelo de madera.",
-    "image": "/images/hotel-casa-xusto.jpg",
+    "title": "Hotel Capellan",
+    "subtitle": "Ctra. de Jarrio, 33795 Navia",
+    "description": "Hotel Capellan se encuentra en Navia, a 2,7 km de Playa de Foxos, y ofrece alojamiento con jardín, parking privado gratis, salón de uso común y terraza. Este hotel de 2 estrellas ofrece wifi gratis. El restaurante sirve platos de cocina americana y de cocina argentina, y el bar es ideal para tomar algo.",
+    "image": "/images/hotel-capellan.jpg",
     "buttonText": "Ver más",
-    "buttonLink": "https://www.booking.com/hotel/es/casa-xusto.es.html?aid=356935&label=metagha-link-MRES-hotel-97363_dev-desktop_los-1_bw-1_dow-Thursday_defdate-1_room-0_gstadt-2_rateid-public_aud-7380588529_gacid-21404702604_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241121_ppt-_lp-2724_r-1456741553501140429&sid=946afb367556c614e723695f77075ab3&checkin=2025-07-11&checkout=2025-07-13&dest_id=357954&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1732138048&srpvid=7b4f96d58b2b010b&type=total&ucfs=1&#no_availability_msg"
+    "buttonLink": "https://www.booking.com/hotel/es/capellan.es.html?aid=356980&label=gog235jc-1FCAMoRkIFbmF2aWFIClgDaEaIAQGYAQq4AQfIAQzYAQHoAQH4AQKIAgGoAgO4AqHZhroGwAIB0gIkMTA1YTVlMWQtNjEzNS00YzgyLTlmYzAtNDU4N2I1ZDA5OWQ32AIF4AIB&sid=946afb367556c614e723695f77075ab3&all_sr_blocks=1123119903_390701340_2_34_0&checkin=2025-07-11&checkout=2025-07-13&dest_id=-393873&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1123119903_390701340_2_34_0&hpos=1&matching_block_id=1123119903_390701340_2_34_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1123119903_390701340_2_34_0__15273&srepoch=1732357341&srpvid=ab3048d6221701b1&type=total&ucfs=1&"
   },
   {
     "id": 3,
     "title": "Hotel Casona Naviega",
-    "subtitle": "Avenida de los Emigrantes, 37, 33710 Navia",
+    "subtitle": "Av. Emigrantes, 37, 33710 Navia",
     "description": "El Naviega Guest House ofrece vistas al río Navia y se encuentra a solo 500 metros del centro de la localidad de Navia. A 2,5 km hay una pequeña playa rodeada de pinos en la costa asturiana. Las habitaciones de la Casona Naviega presentan una decoración individual de estilo clásico inglés con suelo de madera. ",
     "image": "/images/hotel-casona-naviega.jpg",
     "buttonText": "Ver más",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Palacio Arias",
-    "subtitle": "Avenida Emigrantes, 11, 33710 Navia",
+    "subtitle": "Av. Emigrantes, 11, 33710 Navia",
     "description": "Este hotel de lujo está situado en un antiguo palacio indiano ubicado a 1,5 km de la playa de Navia. Está rodeado de jardines preciosos y dispone de habitaciones elegantes con conexión Wi-Fi gratuita y terraza.",
     "image": "/images/hotel-palacio-arias.jpg",
     "buttonText": "Ver más",
