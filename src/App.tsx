@@ -378,7 +378,7 @@ function App() {
           <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
             <Accordion question="Cuenta bancaria">
               <hr className="pb-3" />
-              <p className="pt-2 text-lg sm:text-xl font-inter font-normal"><strong>Titular:</strong> Javier de la Vega Bautista</p>
+              <p className="pt-2 text-lg sm:text-xl font-inter font-normal"><strong>Titular:</strong> Javier de la Vega | Esther Aragay</p>
               <div className="flex flex-row gap-4 pt-2 items-end md:items-center">
                 <p className="text-lg sm:text-xl font-inter font-normal"><strong>IBAN:</strong> <span id="iban-text">ES18 0239 0806 7737 1665 6826</span></p>
                 <Files size="24px" className="min-w-[20px] mb-[8px]"
