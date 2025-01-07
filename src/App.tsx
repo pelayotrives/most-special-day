@@ -1,5 +1,5 @@
 // LIBRARIES
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import toast, { Toaster } from 'react-hot-toast';
@@ -18,10 +18,13 @@ import CardsData from "./utils/cards-data.json";
 import DandelionImage from "/images/dandelion.png";
 import Accordion from "./components/accordion";
 import BusImage from "/images/bus.png";
+import Modal from "./components/modal";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     const mm = gsap.matchMedia();
 
@@ -193,6 +196,18 @@ function App() {
     return () => mm.revert();
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
+        setIsModalOpen(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const iconMap: { [key: string]: LucideIcon } = { TreePine: TreePine, Waves: Waves, House: House, Footprints: Footprints};
 
   const calculateDelay = (index: number, base = 100) => index * base;
@@ -217,7 +232,7 @@ function App() {
         </section>
         {/* COUNTDOWN */}
         <section className="flex flex-col gap-8 text-center pb-24 md:pb-50">
-          <h2 data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="text-gold text-center font-medium font-cormorant text-5xl md:text-7xl">¡No queda nada!</h2>
+          <h2 data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="text-gold text-center font-medium font-cormorant text-5xl md:text-7xl">Tempus Fugit</h2>
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)}>
             <Timer />
           </div>
@@ -237,21 +252,21 @@ function App() {
               <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">¡Hola a todos! Nos hace muchísima ilusión compartir con vosotros los detalles de nuestra boda. En un día tan especial para nosotros, queremos que compartáis nuestra felicidad de la mejor manera posible: en una fiesta que no olvidaremos nunca.</p>
                 <br />
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La ceremonia se celebrará el <strong>12 de julio de 2025</strong> en la <strong>Iglesia de La Caridad</strong>, en <strong>El Franco, Asturias</strong>. Después lo pasaremos increíble en <strong>Ferpel Gastronómico</strong>, en Coaña. Para quienes vengáis de fuera, os recomendamos planificar con antelación vuestro viaje y alojamiento.</p>
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La ceremonia se celebrará el <strong>12 de julio de 2025</strong> en la <strong>Parroquia de Nuestra Señora de La Braña</strong>, en <strong>La Braña, El Franco, Asturias</strong>. Después lo pasaremos increíble en <strong>Ferpel Gastronómico</strong>, en <strong>Ortiguera</strong>. Para quienes vengáis de fuera, os recomendamos planificar con antelación vuestro viaje y alojamiento.</p>
               </div>
               {/* BUTTONS */}
               <div className="flex flex-col gap-6 pb-8 sm:flex-row">
                 <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
-                  <Button text="Ver iglesia" link="https://www.google.es/maps/place/La+Caridad,+El+Franco,+Asturias/@43.554059,-6.8389653,15z/data=!3m1!4b1!4m6!3m5!1s0xd316186c5329db7:0x77ca66d1f4ae4bc!8m2!3d43.5512766!4d-6.8291853!16s%2Fm%2F05q8zf4?hl=es&entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"/>
+                  <Button text="Ver iglesia" link="https://maps.app.goo.gl/Spe4vqqGHisnVEEAA"/>
                 </div>
                 <div data-aos="fade-up" data-aos-delay={calculateDelay(4)}>
-                  <Button text="Ver finca" link="http://ferpelgastronomico.com/" />
+                  <Button text="Ver finca" link="https://maps.app.goo.gl/bXBaY4NNC6rTWXvFA" />
                 </div>
               </div>
             </div>
             {/* MAP */}
             <div data-aos="fade-up" data-aos-delay={calculateDelay(5)} className="w-full lg:w-1/2 relative rounded-lg">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11566.077636439637!2d-6.838965321191526!3d43.55405898770959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd316186c5329db7%3A0x77ca66d1f4ae4bc!2sLa%20Caridad%2C%20El%20Franco%2C%20Asturias!5e0!3m2!1ses!2ses!4v1732137141600!5m2!1ses!2ses"
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.2794262438165!2d-6.861466487302301!3d43.47563867099053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3165e880fc28cb%3A0xd675a5006de9c171!2sParroquia%20de%20Nuestra%20Se%C3%B1ora%20de%20La%20Bra%C3%B1a!5e0!3m2!1ses!2ses!4v1733343729611!5m2!1ses!2ses"
               className="h-[355px] lg:h-[575px] xl:h-[415px] w-full border-none rounded-lg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
@@ -267,8 +282,8 @@ function App() {
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
             <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para vuestra comodidad, hemos organizado flota de autobuses para que podáis despreocuparos de conducir. Los turnos son los siguientes:</p>
             <ul className="list-disc mt-6 pl-10">
-              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida desde [punto de encuentro] hacia [punto de encuentro].</li>
-              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Noche:</strong> Retorno desde [punto de encuentro] a [punto de encuentro].</li>
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida a las 12:00h desde <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Navia</a>, pasando por <a target="_blank" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" className="text-gold underline">La Caridad</a>, hasta la <strong>Parroquia de Nuestra Señora de La Braña</strong>.</li>
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Noche:</strong> Retorno a la 01:00h desde <strong>Ferpel Gastronómico</strong>, pasando por <a className="text-gold underline" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Navia</a>, hasta <a className="text-gold underline" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" target="_blank" rel="noopener noreferrer">La Caridad</a>.</li>
             </ul>
             <br />
             <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Por favor, confirmad vuestra asistencia y si utilizaréis este servicio para coordinar los horarios en el <a href="#asistencia" className="text-gold underline">formulario de la última sección</a>.</p>
@@ -414,6 +429,12 @@ function App() {
             <Button text="Ir a formulario" link="#" />
           </div>
         </section>
+        {/* MODAL */}
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}
+          title="¿Te unes al reto runner?"
+          description="Nos encantaría saber tu opinión sobre este día tan especial. ¡Gracias por acompañarnos!"
+          image="https://placehold.co/600x600"
+        />
         {/* FOOTER */}
         <Footer />
       </div>

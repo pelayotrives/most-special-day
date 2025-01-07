@@ -21,10 +21,10 @@ const Hero = () => {
         {/* SUBTITLE */}
         <p data-aos="fade-up" data-aos-delay="500" className="text-2xl sm:text-4xl font-inter mb-8 tracking-wider">12.07.2025</p>
         {/* ARROW */}
-        <div className="flex flex-col items-center">
+        <a href="#localizacion" className="flex flex-col items-center">
           <ChevronDown data-aos="fade-up" data-aos-delay="900" className="animate-bounce w-8 h-8 mb-2" />
           <span data-aos="fade-up" data-aos-delay="700" className="text-lg">¡Haz scroll!</span>
-        </div>
+        </a>
       </div>
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-black opacity-65"></div>

@@ -9,20 +9,24 @@ import SlidesData from '../utils/slides-data.json';
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3001 },
-    items: 4
+    items: 4,
+    showDots: false
   },
   desktop: {
     breakpoint: { max: 3000, min: 1025 },
-    items: 3
+    items: 3,
+    showDots: false
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
-    items: 2
+    items: 2,
+    showDots: false
   },
   mobile: {
     breakpoint: { max: 767, min: 0 },
     items: 1,
-    dots: true
+    showDots: true,
+    renderDotsOutside: true
   }
 };
 
@@ -50,7 +54,6 @@ const CardCarousel = () => (
     rewindWithAnimation={false}
     rtl={false}
     shouldResetAutoplay
-    showDots={false}
     sliderClass=""
     slidesToSlide={1}
     swipeable
