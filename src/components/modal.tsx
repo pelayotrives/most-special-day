@@ -5,10 +5,11 @@ interface ModalProps {
   onClose: () => void;
   title: string;
   description: string;
+  closure: string;
   image: string;
 }
 
-const Modal = ({ isOpen, onClose, title, description, image }: ModalProps) => {
+const Modal = ({ isOpen, onClose, title, description, closure, image }: ModalProps) => {
   
   if (!isOpen) return null;
 
@@ -29,6 +30,13 @@ const Modal = ({ isOpen, onClose, title, description, image }: ModalProps) => {
           <div className="p-6 flex flex-col gap-2">
             <h3 className="text-3xl font-semibold">{title}</h3>
             <p className="text-lg text-gray-700">{description}</p>
+            <ul className="text-lg text-gray-700">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
+            <p className="text-lg text-gray-700">{closure}</p>
           </div>
         </div>
       </div>

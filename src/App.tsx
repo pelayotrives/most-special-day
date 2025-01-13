@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import toast, { Toaster } from 'react-hot-toast';
-import { LucideIcon, MapPin, BusFront, House, MessageSquareHeart, Music, Gift, TreePine, Waves, Footprints, Users, Files } from 'lucide-react';
+import { LucideIcon, MapPin, BusFront, House, MessageSquareHeart, Music, Gift, Binoculars, Waves, Footprints, Users, Files } from 'lucide-react';
 
 // COMPONENTS
 import Card from "./components/card";
@@ -208,7 +208,7 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const iconMap: { [key: string]: LucideIcon } = { TreePine: TreePine, Waves: Waves, House: House, Footprints: Footprints};
+  const iconMap: { [key: string]: LucideIcon } = { Binoculars: Binoculars, Waves: Waves, House: House, Footprints: Footprints};
 
   const calculateDelay = (index: number, base = 100) => index * base;
 
@@ -236,12 +236,16 @@ function App() {
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)}>
             <Timer />
           </div>
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(2)}>
+            <h2 data-aos="fade-up" data-aos-delay={calculateDelay(3)} className="text-black text-center font-semibold font-cormorant text-3xl md:text-5xl">Querida familia y amigos</h2>
+            <h2 data-aos="fade-up" data-aos-delay={calculateDelay(4)} className="text-black text-center font-medium font-cormorant text-2xl md:text-4xl">¡Bienvenidos a nuestra boda!</h2>
+          </div>
         </section>
         {/* SECTION 1 */}
         <section id="localizacion" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
-            <Title icon={MapPin} text="Localización" />
+            <Title icon={MapPin} text="Cuándo y dónde" />
             <hr />
           </div>
           {/* TEXT + MAP */}
@@ -250,9 +254,11 @@ function App() {
             <div className="w-full lg:w-1/2">
               {/* TEXT */}
               <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">¡Hola a todos! Nos hace muchísima ilusión compartir con vosotros los detalles de nuestra boda. En un día tan especial para nosotros, queremos que compartáis nuestra felicidad de la mejor manera posible: en una fiesta que no olvidaremos nunca.</p>
-                <br />
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La ceremonia se celebrará el <strong>12 de julio de 2025</strong> en la <strong>Parroquia de Nuestra Señora de La Braña</strong>, en <strong>La Braña, El Franco, Asturias</strong>. Después lo pasaremos increíble en <strong>Ferpel Gastronómico</strong>, en <strong>Ortiguera</strong>. Para quienes vengáis de fuera, os recomendamos planificar con antelación vuestro viaje y alojamiento.</p>
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La ceremonia se celebrará el <strong>12 de julio de 2025</strong> a las 13:00h en la <strong>Parroquia de Nuestra Señora de La Braña</strong>, (<strong>El Franco, Asturias</strong>). Después lo celebraremos en <strong>Ferpel Gastronómico</strong>, (<strong>Ortiguera, Asturias</strong>).</p>
+                <br/>
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La <strong>Virgen de La Braña</strong> tiene mucho significado para nosotros. Los abuelos de Esther le han transmitido una devoción que le ha acompañado desde siempre. Desde que se juntaron nuestros caminos y comaprtimos nuestras ilusiones y proyectos, la Virgen de La Braña ha estado presente.</p>
+                <br/>
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Ahora, con motivo de nuestra boda, no hemos podido escoger otro sitio más especial. Estamos seguros de que este rinconcito de Asturias también os cautivará y por eso queremos compartirlo con todos vosotros.</p>
               </div>
               {/* BUTTONS */}
               <div className="flex flex-col gap-6 pb-8 sm:flex-row">
@@ -267,7 +273,7 @@ function App() {
             {/* MAP */}
             <div data-aos="fade-up" data-aos-delay={calculateDelay(5)} className="w-full lg:w-1/2 relative rounded-lg">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.2794262438165!2d-6.861466487302301!3d43.47563867099053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3165e880fc28cb%3A0xd675a5006de9c171!2sParroquia%20de%20Nuestra%20Se%C3%B1ora%20de%20La%20Bra%C3%B1a!5e0!3m2!1ses!2ses!4v1733343729611!5m2!1ses!2ses"
-              className="h-[355px] lg:h-[575px] xl:h-[415px] w-full border-none rounded-lg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              className="h-[355px] lg:h-[575px] xl:h-[470px] w-full border-none rounded-lg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </section>
@@ -280,13 +286,14 @@ function App() {
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para vuestra comodidad, hemos organizado flota de autobuses para que podáis despreocuparos de conducir. Los turnos son los siguientes:</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para vuestra comodidad, hemos organizado flota de autobuses para que podáis despreocuparos de conducir. El itinerario es el siguiente:</p>
             <ul className="list-disc mt-6 pl-10">
-              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida a las 12:00h desde <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Navia</a>, pasando por <a target="_blank" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" className="text-gold underline">La Caridad</a>, hasta la <strong>Parroquia de Nuestra Señora de La Braña</strong>.</li>
-              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Noche:</strong> Retorno a la 01:00h desde <strong>Ferpel Gastronómico</strong>, pasando por <a className="text-gold underline" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Navia</a>, hasta <a className="text-gold underline" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" target="_blank" rel="noopener noreferrer">La Caridad</a>.</li>
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida desde <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Estación de Autobuses de Navia</a>, haciendo parada en <a target="_blank" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" className="text-gold underline">La Caridad</a> a las 12:20h, hasta la <strong>Parroquia de Nuestra Señora de La Braña</strong>.</li>
+              <li className="font-inter font-normal text-lg sm:text-xl">Trayecto desde la iglesia hasta la finca.</li>
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Noche:</strong> Retorno a la 01:00h desde <strong>Ferpel Gastronómico</strong>, con parada en la <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Estación de autobuses de Navia</a>, y finalizando en <a className="text-gold underline" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" target="_blank" rel="noopener noreferrer">La Caridad</a>.</li>
             </ul>
             <br />
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Por favor, confirmad vuestra asistencia y si utilizaréis este servicio para coordinar los horarios en el <a href="#asistencia" className="text-gold underline">formulario de la última sección</a>.</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Por favor, confirmad si utilizaréis este servicio para coordinar los horarios en el <a href="#asistencia" className="text-gold underline">formulario de la última sección</a>.</p>
           </div>
           {/* BUS IMAGE */}
           <section className="w-[600px]" data-aos-delay={calculateDelay(3)}>
@@ -302,7 +309,7 @@ function App() {
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Sabemos que muchos venís de muy lejos (gracias por adelantado ♥️), por lo que hemos seleccionado algunos alojamientos cercanos que podrían interesaros. Estas son nuestras opciones favoritas, pero no las únicas. ¡Las hay de todo tipo! Recordad reservar con antelación para no quedaros sin habitación.</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Sabemos que muchos venís de muy lejos, por lo que hemos seleccionado algunos alojamientos cercanos que podrían interesaros. Estas son algunas opciones, pero no las únicas. Recordad reservar con antelación para no quedaros sin habitación.</p>
           </div>
           {/* CAROUSEL */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(3)} className="pb-8">
@@ -325,14 +332,14 @@ function App() {
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Si Asturias no es uno de los mejores sitios del mundo, entonces no sabemos cuál puede serlo. Si os sobra algo de tiempo entre celebraciones, os hemos preparado algunos de los lugares más especiales que conocemos por la zona. ¿Qué hay mejor que disfrutar de la naturaleza y la cultura asturiana después de una auténtica fiesta?</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Estamos seguros de que a todos os encanta Asturias, pero es probable que no conozcáis esta zona más occidental. Por eso nos hace ilusión compartir con vosotros algunos de los lugares más destacados de la zona y que disfrutéis visitándolos tanto como nosotros.</p>
           </div>
           {/* GRID */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(3)} className="grid gap-8 pb-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {CardsData.map((card) => {
               const IconComponent = iconMap[card.icon];
               if (!IconComponent) {
-                console.warn(`Ícono no encontrado para: ${card.icon}`);
+                console.warn(`Icono no encontrado para: ${card.icon}`);
                 return null;
               }
               return (
@@ -359,7 +366,7 @@ function App() {
         <section id="musica" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
-            <Title icon={Music} text="Música" />
+            <Title icon={Music} text="Canciones que no pueden faltar" />
             <hr />
           </div>
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="flex flex-col-reverse gap-8 md:flex-row-reverse md:gap-12">
@@ -367,14 +374,14 @@ function App() {
             <div className="w-full md:-1/2">
               {/* TEXT */}
               <div className="pb-8">
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Nos encantaría que formarais parte de la banda sonora del día más especial de nuestras vidas. Hemos creado una playlist y nos gustaría que añadierais vuestras canciones favoritas para echar unos buenos bailes. ¡Se admite de todo, pero solo valen temazos!</p>
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed hidden special:block">Nos encantaría que formarais parte de la banda sonora del día más especial de nuestras vidas. Hemos creado una playlist y nos gustaría que añadierais vuestras canciones favoritas para echar unos buenos bailes. ¡Se admite de todo, pero solo valen temazos!</p>
               </div>
               {/* BUTTON */}
-              <Button text="Añadir a la lista" link="#" />
+              <Button text="¡Añade un temazo!" link="https://open.spotify.com/playlist/3h5PyVNSerLzbi3z6YUeMW?si=UeM0rJlARdyEye3l0LvCyA" />
             </div>
             {/* PLAYLIST */}
             <div className="w-full">
-              <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator&theme=0" className="h-[415px] md:h-[355px] lg:h-[355px] w-full" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/3h5PyVNSerLzbi3z6YUeMW?utm_source=generator&theme=0" className="h-[415px] md:h-[355px] lg:h-[355px] w-full" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
           </div>
         </section>
@@ -382,12 +389,12 @@ function App() {
         <section id="regalo" className="flex flex-col pb-24 md:pb-50">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
-            <Title icon={Gift} text="Regalo" />
+            <Title icon={Gift} text="Oda a la generosidad" />
             <hr />
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Lo más importante para nosotros es contar con vuestra presencia en este día tan significativo. Sin embargo, si deseáis contribuir con un regalo, hemos habilitado una cuenta bancaria para ello. Apreciamos muchísimo cualquier aportación, pero, sobre todo, agradecemos el cariño y apoyo que siempre nos habéis dado 🥰</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">No queremos tu dinero. Nos importa tu presencia. Pero la boda no se paga sola, ¿quieres descargar tu conciencia? Tenemos una cuenta: ¡la hemos abierto conjunta! Si quieres colaborar, mira abajo y apunta 🥰</p>
           </div>
           {/* ACCORDION */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
@@ -432,8 +439,9 @@ function App() {
         {/* MODAL */}
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}
           title="¿Te unes al reto runner?"
-          description="Nos encantaría saber tu opinión sobre este día tan especial. ¡Gracias por acompañarnos!"
-          image="https://placehold.co/600x600"
+          description="Por supuesto no podía faltar un poquito de Running pre-enlace. Acompáñanos en este reto, y ¡corre por La Braña!"
+          image="/images/reto-runner.jpg"
+          closure="Iremos compartiendo entrenamientos y más detalles sobre la carrera más adelante."
         />
         {/* FOOTER */}
         <Footer />

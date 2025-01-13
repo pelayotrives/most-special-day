@@ -2,10 +2,10 @@
   {
     "id": 1,
     "icon": "House",
-    "title": "Castro de Coaña",
-    "description": "Monumento Histórico Artístico y yacimiento arqueológico",
-    "image": "/images/cosas-castro-de-coana.jpg",
-    "link": "https://www.turismoasturias.es/descubre/cultura/museos-y-espacios-culturales/castros-y-espacios-arqueologicos/castro-de-coana"
+    "title": "Ribadeo",
+    "description": "Municipio gastronómico con un precioso puerto",
+    "image": "/images/cosas-ribadeo.jpg",
+    "link": "https://turismo.ribadeo.org/?idioma=es"
   },
   {
     "id": 2,
@@ -18,18 +18,18 @@
   {
     "id": 3,
     "icon": "Waves",
-    "title": "Playa de Arnielles",
-    "description": "Playa familiar de arenas finas en un entorno rural y tranquilo",
-    "image": "/images/cosas-playa-arnielles.jpg",
-    "link": "https://www.turismoasturias.es/descubre/costa/playas/playa-de-arnielles"
+    "title": "Playa de Porcía",
+    "description": "Playa recogida salpicada de rocas y con un pequeño islote",
+    "image": "/images/cosas-playa-porcia.jpg",
+    "link": "https://www.turismoasturias.es/descubre/costa/playas/playa-de-porcia"
   },
   {
     "id": 4,
-    "icon": "TreePine",
-    "title": "Reserva de Barayo",
-    "description": "Espacio natural protegido de gran valor ecológico con dunas",
-    "image": "/images/cosas-reserva-natural-barayo.jpg",
-    "link": "https://www.turismoasturias.es/descubre/naturaleza/espacios-protegidos/barayo"
+    "icon": "Binoculars",
+    "title": "Faro de Ortiguera",
+    "description": "Faro que ofrece unas vistas impresionantes a los acantilados",
+    "image": "/images/cosas-faro-san-agustin.jpg",
+    "link": "https://www.asturnatura.com/turismo/guia/faro-de-ortiguera-1917"
   },
   {
     "id": 5,
