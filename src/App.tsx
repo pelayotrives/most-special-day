@@ -309,7 +309,7 @@ function App() {
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Sabemos que muchos venís de muy lejos, por lo que hemos seleccionado algunos alojamientos cercanos que podrían interesaros. Estas son algunas opciones, pero no las únicas. Recordad reservar con antelación para no quedaros sin habitación.</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Sabemos que muchos venís de muy lejos, por lo que hemos seleccionado algunos alojamientos cercanos que podrían interesaros. Estas son algunas opciones, pero no las únicas (para apartamentos o casas rurales grandes, recomendamos buscar en <strong>Booking, Airbnb </strong> y <strong>Google Maps</strong>). Recordad reservar con antelación para no quedaros sin habitación.</p>
           </div>
           {/* CAROUSEL */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(3)} className="pb-8">
@@ -439,7 +439,7 @@ function App() {
         {/* MODAL */}
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}
           title="¿Te unes al reto runner?"
-          description="Por supuesto no podía faltar un poquito de Running pre-enlace. Acompáñanos en este reto, y ¡corre por La Braña!"
+          description="Por supuesto, no podía faltar un poco de running antes del enlace. Acompáñanos en este reto y ¡corre por La Braña!"
           image="/images/reto-runner.jpg"
           closure="Iremos compartiendo entrenamientos y más detalles sobre la carrera más adelante."
         />
