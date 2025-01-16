@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+import { X , SendHorizontal} from "lucide-react";
 
 interface ModalProps {
   isOpen: boolean;
@@ -47,6 +47,7 @@ const Modal = ({ isOpen, onClose, title, description, closure, image, items, but
             <div>
               <a href={buttonLink} target="_blank" className="group flex flex-row items-center gap-3 w-full px-6 py-2.5 rounded-full border border-gold justify-center sm:w-fit transition-all duration-300 ease-in-out cursor-pointer hover:bg-gold hover:shadow-sm">
                 <span className="text-gold font-inter text-md special:text-lg group-hover:text-white">{buttonText}</span>
+                <SendHorizontal className="text-gold group-hover:text-white" />
               </a>
             </div>
           </div>

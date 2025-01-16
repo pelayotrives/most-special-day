@@ -213,6 +213,7 @@ function App() {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
   const iconMap: { [key: string]: LucideIcon } = { Binoculars: Binoculars, Waves: Waves, House: House, Footprints: Footprints};
   const calculateDelay = (index: number, base = 100) => index * base;
 
@@ -265,7 +266,7 @@ function App() {
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Ahora, con motivo de nuestra boda, no hemos podido escoger otro sitio más especial. Estamos seguros de que este rinconcito de Asturias también os cautivará y por eso queremos compartirlo con todos vosotros.</p>
               </div>
               {/* BUTTONS */}
-              <div className="flex flex-col gap-6 sm:flex-row">
+              <div className="flex flex-col gap-6 sm:flex-row pb-12">
                 <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
                   <Button text="Ver iglesia" link="https://maps.app.goo.gl/Spe4vqqGHisnVEEAA"/>
                 </div>
@@ -280,6 +281,13 @@ function App() {
               className="h-[355px] lg:h-[575px] xl:h-[470px] w-full border-none rounded-lg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
+          {/* EXTRA TEXT */}
+          <div className="bg-[#f7f4ef] p-10 rounded-lg">
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed pb-6">El viernes antes de la boda organizaremos una espicha para tomar algo todos juntos a las <strong>20:30</strong> en <strong>La Villa (Navia)</strong>.</p>
+                <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
+                  <Button text="Ver espicha" link="https://maps.app.goo.gl/vubP45tdF6Ct8tM7A"/>
+                </div>
+              </div>
         </section>
         {/* SECTION 2 */}
         <section id="transporte" className="flex flex-col pb-20 md:pb-36 overflow-x-hidden">

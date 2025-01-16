@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useForm, SubmitHandler } from "react-hook-form";
 import toast from "react-hot-toast";
+import { SendHorizontal } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -201,11 +202,10 @@ export default function Contact() {
         <div className="flex items-center justify-center">
           <button
             type="submit"
-            className="group flex flex-row items-center gap-3 w-full px-10 py-2.5 rounded-full justify-center special:w-fit transition-all duration-300 ease-in-out cursor-pointer bg-gold hover:shadow-sm"
+            className="group flex flex-row items-center gap-3 w-full px-10 py-2.5 rounded-full border border-gold justify-center sm:w-fit transition-all duration-300 ease-in-out cursor-pointer hover:bg-gold hover:shadow-sm"
           >
-            <span className="font-inter text-md special:text-lg text-white">
-              Enviar
-            </span>
+            <span className="text-gold font-inter text-lg group-hover:text-white">Enviar</span>
+            <SendHorizontal className="text-gold group-hover:text-white" />
           </button>
         </div>
       </form>
