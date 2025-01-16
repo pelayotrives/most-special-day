@@ -23,7 +23,7 @@ const Hero = () => {
         {/* ARROW */}
         <a href="#localizacion" className="flex flex-col items-center">
           <ChevronDown data-aos="fade-up" data-aos-delay="900" className="animate-bounce w-8 h-8 mb-2" />
-          <span data-aos="fade-up" data-aos-delay="700" className="text-lg">¡Haz scroll!</span>
+          <span data-aos="fade-up" data-aos-delay="700" data-aos-offset="175" className="text-lg">¡Haz scroll!</span>
         </a>
       </div>
       {/* OVERLAY */}
