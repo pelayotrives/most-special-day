@@ -201,6 +201,7 @@ function App() {
     const handleScroll = () => {
       if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
         setIsModalOpen(true);
+        window.removeEventListener('scroll', handleScroll);
       }
     };
 
@@ -209,8 +210,10 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   const iconMap: { [key: string]: LucideIcon } = { Binoculars: Binoculars, Waves: Waves, House: House, Footprints: Footprints};
-
   const calculateDelay = (index: number, base = 100) => index * base;
 
   return (
@@ -227,7 +230,7 @@ function App() {
       </section>
       {/* CONTENT */}
       <div className="container mx-auto px-4 md:px-8">
-        {/* DANDELION IMAGE */}
+        {/* GSAP IMAGE */}
         <section className="w-40 md:w-48 mx-auto mt-48">
           <img width={200} className="dandelion-image mx-auto" src={DandelionImage} alt="Dandelion"/>
         </section>
@@ -438,7 +441,9 @@ function App() {
           </div>
         </section>
         {/* MODAL */}
-        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}
+        <Modal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
           title="¿Te unes al reto runner?"
           description="Por supuesto, no podía faltar un poco de running antes del enlace. Acompáñanos en este reto y ¡corre por La Braña!"
           image="/images/reto-runner.jpg"

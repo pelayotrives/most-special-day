@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -21,9 +22,10 @@ const Modal = ({ isOpen, onClose, title, description, closure, image, items, but
       <div className="bg-white rounded-lg shadow-lg max-w-4xl w-full mx-4 relative">
         {/* CLOSE BUTTON */}
         <button onClick={onClose} className="absolute top-3 right-3 focus:outline-none">
-          <div className="bg-transparent size-9 flex items-center justify-center rounded-full w-9 h-9">
-            <X className="text-center" color="#000" size={24} />
-          </div>
+            <div className="bg-transparent size-9 flex items-center justify-center rounded-full w-9 h-9">
+            <X className="text-center md:hidden" color="#FFFFFF" size={32} />
+            <X className="text-center hidden md:block" color="#000000" size={32} />
+            </div>
         </button>
         <div className="flex flex-col items-center md:flex-row">
           {/* IMAGE */}

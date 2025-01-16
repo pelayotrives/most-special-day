@@ -38,7 +38,6 @@ const CardCarousel = () => (
     autoPlaySpeed={4500}
     centerMode={false}
     className=""
-    containerClass="container-with-dots"
     draggable
     focusOnSelect={false}
     infinite
