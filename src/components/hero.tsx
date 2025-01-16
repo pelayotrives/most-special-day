@@ -17,7 +17,7 @@ const Hero = () => {
           <AudioButton />
         </div>
         {/* TITLE */}
-        <h1 data-aos="fade-down" data-aos-delay="300" className="text-7xl sm:text-8xl font-bold font-cormorant mb-4">Esther & Javier</h1>
+        <h1 data-aos="fade-down" data-aos-delay="300" className="text-7xl sm:text-8xl font-bold font-cormorant mb-12 mt-8 special:mb-4 special:mt-0 leading-none special:leading-normal">Esther <span className="special:inline block">&</span> <span className="special:inline block">Javier</span></h1>
         {/* SUBTITLE */}
         <p data-aos="fade-up" data-aos-delay="500" className="text-2xl sm:text-4xl font-inter mb-8 tracking-wider">12.07.2025</p>
         {/* ARROW */}

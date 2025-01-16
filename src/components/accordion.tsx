@@ -13,7 +13,7 @@ export default function FAQ({ question, children }: FAQProps) {
   const toggleOpen = () => setOpen(!open);
 
   return (
-    <section className="w-full pb-8">
+    <section className="w-full">
       <div className={`px-5 py-6 transition-all cursor-pointer shadow-subtle border border-[#E5E5E5] rounded-lg`}>
         {/* QUESTIONS */}
         <div onClick={toggleOpen} className="flex items-center justify-between font-semibold font-inter text-lg sm:text-xl gap-4 cursor-pointer">

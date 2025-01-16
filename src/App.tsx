@@ -6,19 +6,20 @@ import toast, { Toaster } from 'react-hot-toast';
 import { LucideIcon, MapPin, BusFront, House, MessageSquareHeart, Music, Gift, Binoculars, Waves, Footprints, Users, Files } from 'lucide-react';
 
 // COMPONENTS
-import Card from "./components/card";
-import Carousel from "./components/carousel";
+import Accordion from "./components/accordion";
+import BusImage from "/images/bus.png";
 import Button from "./components/button";
+import Card from "./components/card";
+import CardsData from "./utils/cards-data.json";
+import Carousel from "./components/carousel";
+import Contact from "./components/form";
+import DandelionImage from "/images/dandelion.png";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import Modal from "./components/modal";
 import Timer from "./components/countdown";
 import Title from "./components/title";
-import CardsData from "./utils/cards-data.json";
-import DandelionImage from "/images/dandelion.png";
-import Accordion from "./components/accordion";
-import BusImage from "/images/bus.png";
-import Modal from "./components/modal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -231,7 +232,7 @@ function App() {
           <img width={200} className="dandelion-image mx-auto" src={DandelionImage} alt="Dandelion"/>
         </section>
         {/* COUNTDOWN */}
-        <section className="flex flex-col gap-8 text-center pb-24 md:pb-50">
+        <section className="flex flex-col gap-8 text-center pb-20 md:pb-36">
           <h2 data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="text-gold text-center font-medium font-cormorant text-5xl md:text-7xl">Tempus Fugit</h2>
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)}>
             <Timer />
@@ -242,7 +243,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 1 */}
-        <section id="localizacion" className="flex flex-col pb-24 md:pb-50">
+        <section id="localizacion" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={MapPin} text="Cuándo y dónde" />
@@ -261,7 +262,7 @@ function App() {
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Ahora, con motivo de nuestra boda, no hemos podido escoger otro sitio más especial. Estamos seguros de que este rinconcito de Asturias también os cautivará y por eso queremos compartirlo con todos vosotros.</p>
               </div>
               {/* BUTTONS */}
-              <div className="flex flex-col gap-6 pb-8 sm:flex-row">
+              <div className="flex flex-col gap-6 sm:flex-row">
                 <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
                   <Button text="Ver iglesia" link="https://maps.app.goo.gl/Spe4vqqGHisnVEEAA"/>
                 </div>
@@ -278,7 +279,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 2 */}
-        <section id="transporte" className="flex flex-col pb-24 md:pb-50 overflow-x-hidden">
+        <section id="transporte" className="flex flex-col pb-20 md:pb-36 overflow-x-hidden">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={BusFront} text="Transporte" />
@@ -301,7 +302,7 @@ function App() {
           </section>
         </section>
         {/* SECTION 3 */}
-        <section id="alojamiento" className="flex flex-col pb-24 md:pb-50">
+        <section id="alojamiento" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={House} text="Alojamiento" />
@@ -316,7 +317,7 @@ function App() {
             <Carousel />
           </div>
           {/* BUTTON */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(4)} className="pb-8">
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(4)}>
             <Button
               text="Ver más hoteles"
               link="https://www.booking.com/searchresults.es.html?ss=Ortiguera%2C+Asturias%2C+Spain&ssne=El+Franco&ssne_untouched=El+Franco&label=gog235jc-1DCAMoRkIJZWwtZnJhbmNvSApYA2hGiAEBmAEKuAEHyAEM2AED6AEB-AECiAIBqAIDuAKGrfm5BsACAdICJGViYWEyMGNjLWY2NTYtNDAwZS1iNjJlLWQ0ZWU5YjA2Y2QyZdgCBOACAQ&aid=356980&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-394784&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=1&search_selected=true&search_pageview_id=27a3980b64160131&ac_meta=GhAyN2EzOTgwYjY0MTYwMTMxIAAoATICZW46CW9ydGlndWVyYUAASgBQAA%3D%3D&checkin=2025-07-11&checkout=2025-07-13&group_adults=2&no_rooms=1&group_children=0"
@@ -324,7 +325,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 4 */}
-        <section id="sitios-de-interes" className="flex flex-col pb-24 md:pb-50">
+        <section id="sitios-de-interes" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={MessageSquareHeart} text="Sitios de interés" />
@@ -355,7 +356,7 @@ function App() {
             })}
           </div>
           {/* BUTTON */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(4)} className="pb-8">
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(4)}>
             <Button
               text="Ver más sitios"
               link="https://www.turismoasturias.es/descubre/costa/villas-marineras/marinera-ortiguera"
@@ -363,7 +364,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 5 */}
-        <section id="musica" className="flex flex-col pb-24 md:pb-50">
+        <section id="musica" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={Music} text="Canciones que no pueden faltar" />
@@ -373,7 +374,7 @@ function App() {
             {/* TEXT */}
             <div className="w-full md:-1/2">
               {/* TEXT */}
-              <div className="pb-8">
+              <div className="special:pb-8">
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed hidden special:block">Nos encantaría que formarais parte de la banda sonora del día más especial de nuestras vidas. Hemos creado una playlist y nos gustaría que añadierais vuestras canciones favoritas para echar unos buenos bailes. ¡Se admite de todo, pero solo valen temazos!</p>
               </div>
               {/* BUTTON */}
@@ -386,7 +387,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 6 */}
-        <section id="regalo" className="flex flex-col pb-24 md:pb-50">
+        <section id="regalo" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={Gift} text="Oda a la generosidad" />
@@ -421,7 +422,7 @@ function App() {
           </div>
         </section>
         {/* SECTION 7 */}
-        <section id="asistencia" className="flex flex-col pb-40 md:pb-50">
+        <section id="asistencia" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
             <Title icon={Users} text="Asistencia" />
@@ -432,8 +433,8 @@ function App() {
             <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para organizar todo de la mejor manera posible, os pedimos que rellenéis el formulario de confirmación de asistencia con todos los datos necesarios. Esto nos va a ayudar a asegurar que cada detalle esté a vuestro gusto.</p>
           </div>
           {/* BUTTON */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(3)} className="pb-8">
-            <Button text="Ir a formulario" link="#" />
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
+            <Contact />
           </div>
         </section>
         {/* MODAL */}
@@ -442,6 +443,13 @@ function App() {
           description="Por supuesto, no podía faltar un poco de running antes del enlace. Acompáñanos en este reto y ¡corre por La Braña!"
           image="/images/reto-runner.jpg"
           closure="Iremos compartiendo entrenamientos y más detalles sobre la carrera más adelante."
+          items={[
+            "Viernes 11 de Julio a las 17:00 horas",
+            "12 km y 370 m de desnivel",
+            "Salida desde La Caridad y meta en la Iglesia de Nuestra Señora de La Braña"
+          ]}
+          buttonLink="mailto:javivb95@hotmail.com?subject=Quiero%20inscribirme%20al%20reto%20runner"
+          buttonText="Inscríbete"
         />
         {/* FOOTER */}
         <Footer />
