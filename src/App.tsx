@@ -282,12 +282,10 @@ function App() {
             </div>
           </div>
           {/* EXTRA TEXT */}
-          <div className="bg-[#f7f4ef] p-10 rounded-lg">
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed pb-6">El viernes antes de la boda organizaremos una espicha para tomar algo todos juntos a las <strong>20:30</strong> en <strong>La Villa (Navia)</strong>.</p>
-                <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
-                  <Button text="Ver espicha" link="https://maps.app.goo.gl/vubP45tdF6Ct8tM7A"/>
-                </div>
-              </div>
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(6)} className="bg-[#f7f4ef] p-10 rounded-lg">
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed pb-6">El viernes antes de la boda organizaremos una espicha para tomar algo todos juntos a las <strong>20:30</strong> en <strong>La Villa (Navia)</strong>.</p>
+            <Button text="Ver espicha" link="https://maps.app.goo.gl/vubP45tdF6Ct8tM7A"/>
+          </div>
         </section>
         {/* SECTION 2 */}
         <section id="transporte" className="flex flex-col pb-20 md:pb-36 overflow-x-hidden">
