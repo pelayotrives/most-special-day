@@ -41,7 +41,7 @@ const Timer = () => {
               {unit.value.toString().padStart(2, '0')}
               {index < timeUnits.length - 1 && ":"}
             </div>
-            <div className="mt-2 text-base md:text-3xl font-inter font-light tracking-wide">
+            <div className="mt-2 ml-[-20px] special:ml-[-16px] text-base md:text-3xl font-inter font-light tracking-widest">
               {unit.label}
             </div>
           </div>
