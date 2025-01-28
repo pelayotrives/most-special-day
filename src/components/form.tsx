@@ -167,22 +167,22 @@ export default function Contact() {
             </div>
           </>
         )}
-        {/* Utilizarás autobús */}
+        {/* Utilizaré autobús */}
         <div className="mb-6">
           {errors.bus && (
             <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.bus.message}</p>
           )}
           <label className="font-inter font-normal text-lg flex items-center gap-4">
-            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("bus")} /> Utilizarás autobús
+            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("bus")} /> Utilizaré autobús
           </label>
         </div>
-        {/* Asistencia a la espicha */}
+        {/* Asistiré a la espicha */}
         <div className="mb-6">
           {errors.preparty && (
             <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.preparty.message}</p>
           )}
           <label className="font-inter font-normal text-lg flex items-center gap-4">
-            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("preparty")} /> Asistencia a la
+            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("preparty")} /> Asistiré a la
             espicha
           </label>
         </div>

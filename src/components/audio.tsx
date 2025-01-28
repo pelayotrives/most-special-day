@@ -5,7 +5,7 @@ import { Volume2 } from 'lucide-react';
 
 const AudioButton = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(new Audio('/audio/woman.mp3'));
+  const audioRef = useRef(new Audio('/audio/mighty_oaks_the_great_northwest.mp3'));
 
   const togglePlay = () => {
     if (isPlaying) {

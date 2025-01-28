@@ -261,7 +261,7 @@ function App() {
               <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La ceremonia se celebrará el <strong>12 de julio de 2025</strong> a las 13:00h en la <strong>Parroquia de Nuestra Señora de La Braña</strong>, (<strong>El Franco, Asturias</strong>). Después lo celebraremos en <strong>Ferpel Gastronómico</strong>, (<strong>Ortiguera, Asturias</strong>).</p>
                 <br/>
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La <strong>Virgen de La Braña</strong> tiene mucho significado para nosotros. Los abuelos de Esther le han transmitido una devoción que le ha acompañado desde siempre. Desde que se juntaron nuestros caminos y comaprtimos nuestras ilusiones y proyectos, la Virgen de La Braña ha estado presente.</p>
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">La <strong>Virgen de La Braña</strong> tiene mucho significado para nosotros. Los abuelos de Esther le han transmitido una devoción que le ha acompañado desde siempre. Desde que se juntaron nuestros caminos y compartimos nuestras ilusiones y proyectos, la Virgen de La Braña ha estado presente.</p>
                 <br/>
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Ahora, con motivo de nuestra boda, no hemos podido escoger otro sitio más especial. Estamos seguros de que este rinconcito de Asturias también os cautivará y por eso queremos compartirlo con todos vosotros.</p>
               </div>
@@ -296,10 +296,10 @@ function App() {
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para vuestra comodidad, hemos organizado flota de autobuses para que podáis despreocuparos de conducir. El itinerario es el siguiente:</p>
+            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">Para vuestra comodidad, vamos a organizar un par de autobuses y así os despreocupáis de conducir. El itinerario será el siguiente:</p>
             <ul className="list-disc mt-6 pl-10">
-              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida desde <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Estación de Autobuses de Navia</a>, haciendo parada en <a target="_blank" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" className="text-gold underline">La Caridad</a> a las 12:20h, hasta la <strong>Parroquia de Nuestra Señora de La Braña</strong>.</li>
-              <li className="font-inter font-normal text-lg sm:text-xl">Trayecto desde la iglesia hasta la finca.</li>
+              <li className="font-inter font-normal text-lg sm:text-xl"><strong>Mañana:</strong> Salida a las 12:00 desde <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Estación de Autobuses de Navia</a>, haciendo parada en <a target="_blank" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" className="text-gold underline">La Caridad</a> a las 12:20h, hasta la <strong>Parroquia de Nuestra Señora de La Braña</strong>.</li>
+              <li className="font-inter font-normal text-lg sm:text-xl">Traslado desde la iglesia hasta la finca.</li>
               <li className="font-inter font-normal text-lg sm:text-xl"><strong>Noche:</strong> Retorno a la 01:00h desde <strong>Ferpel Gastronómico</strong>, con parada en la <a className="text-gold underline" target="_blank" href="https://maps.app.goo.gl/b9pheLVkQ4n1vYdZ8">Estación de autobuses de Navia</a>, y finalizando en <a className="text-gold underline" href="https://maps.app.goo.gl/BC8Qnr1p1sgPTGnV7" target="_blank" rel="noopener noreferrer">La Caridad</a>.</li>
             </ul>
             <br />
@@ -334,6 +334,69 @@ function App() {
           </div>
         </section>
         {/* SECTION 4 */}
+        <section id="musica" className="flex flex-col pb-20 md:pb-36">
+          {/* TITLE */}
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
+            <Title icon={Music} text="Canciones imprescindibles" />
+            <hr />
+          </div>
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="flex flex-col-reverse gap-8 md:flex-row-reverse md:gap-12">
+            {/* TEXT */}
+            <div className="w-full md:-1/2">
+              {/* TEXT */}
+              <div className="special:pb-8">
+                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed hidden special:block">Nos encantaría que formarais parte de la banda sonora del día más especial de nuestras vidas. Hemos creado una playlist y nos gustaría que añadierais vuestras canciones favoritas para echar unos buenos bailes. ¡Se admite de todo, pero solo valen temazos!</p>
+              </div>
+              {/* BUTTON */}
+              <Button text="¡Añade un temazo!" link="https://open.spotify.com/playlist/3h5PyVNSerLzbi3z6YUeMW?si=ede045b6a1a54dac&pt=86f4f7456d2650152c14b67e9b4f5a16" />
+            </div>
+            {/* PLAYLIST */}
+            <div className="w-full">
+              <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/3h5PyVNSerLzbi3z6YUeMW?utm_source=generator&theme=0" className="h-[415px] md:h-[355px] lg:h-[355px] w-full" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </section>
+        {/* SECTION 5 */}
+        <section id="regalo" className="flex flex-col pb-20 md:pb-36">
+          {/* TITLE */}
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
+            <Title icon={Gift} text="Oda a la generosidad" />
+            <hr />
+          </div>
+          {/* TEXT */}
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
+            <em className="font-inter font-normal text-lg sm:text-xl leading-relaxed text-center m-auto">
+              No buscamos fortuna, solo tu compañía, <br className="special:hidden"/>
+              pero si un detalle quieres tener... ¡Qué alegría! <br className="special:hidden"/>
+              Tenemos una cuenta: ¡La hemos abierto conjunta! <br className="special:hidden"/>
+              Si quieres participar, mira abajo y apunta.
+            </em>
+          </div>
+          {/* ACCORDION */}
+          <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
+            <Accordion question="Cuenta bancaria">
+              <hr className="pb-3" />
+              <p className="pt-2 text-lg sm:text-xl font-inter font-normal"><strong>Titular:</strong> Javier de la Vega | Esther Aragay</p>
+              <div className="flex flex-row gap-4 pt-2 items-end md:items-center">
+                <p className="text-lg sm:text-xl font-inter font-normal"><strong>IBAN:</strong> <span id="iban-text">ES18 0239 0806 7737 1665 6826</span></p>
+                <Files size="24px" className="min-w-[20px] mb-[8px]"
+                  onClick={() => {
+                    const ibanElement = document.getElementById("iban-text");
+                    const ibanText = ibanElement?.textContent ?? "";
+                    navigator.clipboard.writeText(ibanText).then(() => {
+                        toast.success("¡IBAN copiado!");
+                      })
+                      .catch((err) => {
+                        console.error("Error al copiar el IBAN: ", err);
+                      });
+                   }}
+                />
+              </div>
+              <p className="pt-2 text-lg sm:text-xl font-inter font-normal"><strong>Banco:</strong> EVO Banco</p>
+            </Accordion>
+          </div>
+        </section>
+        {/* SECTION 6 */}
         <section id="sitios-de-interes" className="flex flex-col pb-20 md:pb-36">
           {/* TITLE */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
@@ -370,64 +433,6 @@ function App() {
               text="Ver más sitios"
               link="https://www.turismoasturias.es/descubre/costa/villas-marineras/marinera-ortiguera"
             />
-          </div>
-        </section>
-        {/* SECTION 5 */}
-        <section id="musica" className="flex flex-col pb-20 md:pb-36">
-          {/* TITLE */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
-            <Title icon={Music} text="Canciones que no pueden faltar" />
-            <hr />
-          </div>
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="flex flex-col-reverse gap-8 md:flex-row-reverse md:gap-12">
-            {/* TEXT */}
-            <div className="w-full md:-1/2">
-              {/* TEXT */}
-              <div className="special:pb-8">
-                <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed hidden special:block">Nos encantaría que formarais parte de la banda sonora del día más especial de nuestras vidas. Hemos creado una playlist y nos gustaría que añadierais vuestras canciones favoritas para echar unos buenos bailes. ¡Se admite de todo, pero solo valen temazos!</p>
-              </div>
-              {/* BUTTON */}
-              <Button text="¡Añade un temazo!" link="https://open.spotify.com/playlist/3h5PyVNSerLzbi3z6YUeMW?si=UeM0rJlARdyEye3l0LvCyA" />
-            </div>
-            {/* PLAYLIST */}
-            <div className="w-full">
-              <iframe style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/3h5PyVNSerLzbi3z6YUeMW?utm_source=generator&theme=0" className="h-[415px] md:h-[355px] lg:h-[355px] w-full" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-          </div>
-        </section>
-        {/* SECTION 6 */}
-        <section id="regalo" className="flex flex-col pb-20 md:pb-36">
-          {/* TITLE */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(1)} className="pb-8">
-            <Title icon={Gift} text="Oda a la generosidad" />
-            <hr />
-          </div>
-          {/* TEXT */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed">No queremos tu dinero. Nos importa tu presencia. Pero la boda no se paga sola, ¿quieres descargar tu conciencia? Tenemos una cuenta: ¡la hemos abierto conjunta! Si quieres colaborar, mira abajo y apunta 🥰</p>
-          </div>
-          {/* ACCORDION */}
-          <div data-aos="fade-up" data-aos-delay={calculateDelay(3)}>
-            <Accordion question="Cuenta bancaria">
-              <hr className="pb-3" />
-              <p className="pt-2 text-lg sm:text-xl font-inter font-normal"><strong>Titular:</strong> Javier de la Vega | Esther Aragay</p>
-              <div className="flex flex-row gap-4 pt-2 items-end md:items-center">
-                <p className="text-lg sm:text-xl font-inter font-normal"><strong>IBAN:</strong> <span id="iban-text">ES18 0239 0806 7737 1665 6826</span></p>
-                <Files size="24px" className="min-w-[20px] mb-[8px]"
-                  onClick={() => {
-                    const ibanElement = document.getElementById("iban-text");
-                    const ibanText = ibanElement?.textContent ?? "";
-                    navigator.clipboard.writeText(ibanText).then(() => {
-                        toast.success("¡IBAN copiado!");
-                      })
-                      .catch((err) => {
-                        console.error("Error al copiar el IBAN: ", err);
-                      });
-                   }}
-                />
-              </div>
-              <p className="pt-2 text-lg sm:text-xl font-inter font-normal"><strong>Banco:</strong> EVO Banco</p>
-            </Accordion>
           </div>
         </section>
         {/* SECTION 7 */}

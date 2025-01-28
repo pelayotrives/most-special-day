@@ -16,18 +16,18 @@
   },
   {
     "id": 4,
-    "name": "Sitios de Interés",
-    "url": "#sitios-de-interes"
-  },
-  {
-    "id": 5,
     "name": "Música",
     "url": "#musica"
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Regalo",
     "url": "#regalo"
+  },
+  {
+    "id": 6,
+    "name": "Sitios de Interés",
+    "url": "#sitios-de-interes"
   },
   {
     "id": 7,

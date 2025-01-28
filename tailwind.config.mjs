@@ -65,6 +65,7 @@ export default {
         special: '475px',
         special2: '550px',
         md: '768px',
+        special3: '925px',
         lg: '1024px',
         xl: '1440px',
         '2xl': '2560px',
