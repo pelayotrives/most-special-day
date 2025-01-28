@@ -383,7 +383,7 @@ function App() {
           </div>
           {/* TEXT */}
           <div data-aos="fade-up" data-aos-delay={calculateDelay(2)} className="pb-8">
-            <em className="font-inter font-normal text-lg sm:text-xl leading-relaxed text-center m-auto">
+            <em className="font-inter font-normal text-lg sm:text-xl leading-relaxed">
               No buscamos fortuna, solo tu compañía, <br className="special:hidden"/>
               pero si un detalle quieres tener... ¡Qué alegría! <br className="special:hidden"/>
               Tenemos una cuenta: ¡La hemos abierto conjunta! <br className="special:hidden"/>
