@@ -1,4 +1,5 @@
 import { X , SendHorizontal} from "lucide-react";
+import ReactDOM from 'react-dom';
 
 interface ModalProps {
   isOpen: boolean;
@@ -16,7 +17,7 @@ const Modal = ({ isOpen, onClose, title, description, closure, image, items, but
   
   if (!isOpen) return null;
 
-  return (
+  return ReactDOM.createPortal(
     <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center">
       {/* MODAL */}
       <div className="bg-white rounded-lg shadow-lg max-w-4xl w-full mx-4 relative">
@@ -53,7 +54,8 @@ const Modal = ({ isOpen, onClose, title, description, closure, image, items, but
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
