@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="relative h-screen bg-cover bg-center overflow-hidden">
       {/* IMAGE */}
-      <div className="absolute inset-0 w-full h-full bg-no-repeat special2:bg-center bg-[-400px] bg-cover" style={{ backgroundImage: `url(${HeroImage})` }}></div>
+      <div className="absolute inset-0 w-full h-full bg-no-repeat special2:bg-center bg-[-350px] bg-cover" style={{ backgroundImage: `url(${HeroImage})` }}></div>
       {/* TEXT */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         {/* AUDIO */}
