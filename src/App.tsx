@@ -366,7 +366,7 @@ function App() {
                 <p className="font-inter font-normal text-lg sm:text-xl leading-relaxed hidden special:block">Nos encantaría que formarais parte de la banda sonora del día más especial de nuestras vidas. Hemos creado una playlist y nos gustaría que añadierais vuestras canciones favoritas para echar unos buenos bailes. ¡Se admite de todo, pero solo valen temazos!</p>
               </div>
               {/* BUTTON */}
-              <Button text="¡Añade un temazo!" link="https://open.spotify.com/playlist/3h5PyVNSerLzbi3z6YUeMW?si=ede045b6a1a54dac&pt=86f4f7456d2650152c14b67e9b4f5a16" />
+              <Button text="¡Añade un temazo!" link="https://open.spotify.com/playlist/3h5PyVNSerLzbi3z6YUeMW?si=h0sUCX4ZRO-Gk1yxvryCsA&pt=3cf1dcefac3cd723f4614fe027c2e362&pi=4fazhxdTR5WR4" />
             </div>
             {/* PLAYLIST */}
             <div className="w-full">
