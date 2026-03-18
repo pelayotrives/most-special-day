@@ -1,33 +1,33 @@
 // LIBRARIES
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 // COMPONENTS
-import CarouselSlide from './carousel-slide';
-import SlidesData from '../utils/slides-data.json';
+import CarouselSlide from "./carousel-slide";
+import SlidesData from "../utils/slides-data.json";
 
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3001 },
     items: 4,
-    showDots: false
+    showDots: false,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1025 },
     items: 3,
-    showDots: false
+    showDots: false,
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
     items: 2,
-    showDots: false
+    showDots: false,
   },
   mobile: {
     breakpoint: { max: 767, min: 0 },
     items: 1,
     showDots: true,
-    renderDotsOutside: true
-  }
+    renderDotsOutside: true,
+  },
 };
 
 const CardCarousel = () => (
@@ -57,17 +57,27 @@ const CardCarousel = () => (
     slidesToSlide={1}
     swipeable
   >
-    {SlidesData.map((slide: { id: number; image: string; title: string; subtitle: string; description: string; buttonText: string; buttonLink: string; }) => (
-      <CarouselSlide
-        key={slide.id}
-        image={slide.image}
-        title={slide.title}
-        subtitle={slide.subtitle}
-        description={slide.description}
-        buttonText={slide.buttonText}
-        buttonLink={slide.buttonLink}
-      />
-    ))}
+    {SlidesData.map(
+      (slide: {
+        id: number;
+        image: string;
+        title: string;
+        subtitle: string;
+        description: string;
+        buttonText: string;
+        buttonLink: string;
+      }) => (
+        <CarouselSlide
+          key={slide.id}
+          image={slide.image}
+          title={slide.title}
+          subtitle={slide.subtitle}
+          description={slide.description}
+          buttonText={slide.buttonText}
+          buttonLink={slide.buttonLink}
+        />
+      )
+    )}
   </Carousel>
 );
 

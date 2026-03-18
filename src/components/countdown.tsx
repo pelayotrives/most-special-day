@@ -1,6 +1,6 @@
 // LIBRERÍAS
-import { useState, useEffect } from 'react';
-import Countdown from 'react-countdown';
+import { useState, useEffect } from "react";
+import Countdown from "react-countdown";
 
 const Timer = () => {
   const targetDate = new Date("2025-07-12T00:00:00");
@@ -10,11 +10,23 @@ const Timer = () => {
 
   useEffect(() => {
     const handleResize = () => setShowSeconds(isMediumScreen());
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const renderer = ({ days, hours, minutes, seconds, completed }: { days: number, hours: number, minutes: number, seconds: number, completed: boolean }) => {
+  const renderer = ({
+    days,
+    hours,
+    minutes,
+    seconds,
+    completed,
+  }: {
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+    completed: boolean;
+  }) => {
     if (completed) {
       return (
         <div className="font-inter font-light tracking-wide text-6xl md:text-8xl text-center">
@@ -24,13 +36,13 @@ const Timer = () => {
     }
 
     const timeUnits = [
-      { value: days, label: 'DD' },
-      { value: hours, label: 'HH' },
-      { value: minutes, label: 'MM' },
+      { value: days, label: "DD" },
+      { value: hours, label: "HH" },
+      { value: minutes, label: "MM" },
     ];
 
     if (showSeconds) {
-      timeUnits.push({ value: seconds, label: 'SS' });
+      timeUnits.push({ value: seconds, label: "SS" });
     }
 
     return (
@@ -38,7 +50,7 @@ const Timer = () => {
         {timeUnits.map((unit, index) => (
           <div key={index} className="text-center">
             <div className="font-inter font-light tracking-widest text-6xl md:text-8xl special3:text-9xl">
-              {unit.value.toString().padStart(2, '0')}
+              {unit.value.toString().padStart(2, "0")}
               {index < timeUnits.length - 1 && ":"}
             </div>
             <div className="mt-2 ml-[-20px] special:ml-[-16px] text-base md:text-3xl font-inter font-light tracking-widest">

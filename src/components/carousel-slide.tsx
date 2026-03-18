@@ -1,5 +1,5 @@
 // COMPONENTS
-import Button from './button';
+import Button from "./button";
 interface CarouselSlideProps {
   image: string;
   title: string;
@@ -9,7 +9,14 @@ interface CarouselSlideProps {
   buttonLink: string;
 }
 
-const CarouselSlide = ({ image, title, subtitle, description, buttonText, buttonLink }: CarouselSlideProps) => (
+const CarouselSlide = ({
+  image,
+  title,
+  subtitle,
+  description,
+  buttonText,
+  buttonLink,
+}: CarouselSlideProps) => (
   <div className="bg-transparent shadow-sm border border-gray-200 rounded-lg w-full min-h-[525px] sm:min-h-max md:w-11/12">
     <div className="p-6 flex flex-col gap-4">
       <img className="w-full rounded-lg h-[210px] object-cover" src={image} alt={title} />

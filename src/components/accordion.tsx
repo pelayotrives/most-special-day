@@ -14,14 +14,26 @@ export default function FAQ({ question, children }: FAQProps) {
 
   return (
     <section className="w-full">
-      <div className={`px-5 py-6 transition-all cursor-pointer shadow-subtle border border-[#E5E5E5] rounded-lg`}>
+      <div
+        className={`px-5 py-6 transition-all cursor-pointer shadow-subtle border border-[#E5E5E5] rounded-lg`}
+      >
         {/* QUESTIONS */}
-        <div onClick={toggleOpen} className="flex items-center justify-between font-semibold font-inter text-lg sm:text-xl gap-4 cursor-pointer">
+        <div
+          onClick={toggleOpen}
+          className="flex items-center justify-between font-semibold font-inter text-lg sm:text-xl gap-4 cursor-pointer"
+        >
           {question}
-          <ChevronDown size="28px" className={`min-w-[28px] transform transition-transform duration-300 ${ open ? "rotate-180" : "rotate-0" }`}/>
+          <ChevronDown
+            size="28px"
+            className={`min-w-[28px] transform transition-transform duration-300 ${open ? "rotate-180" : "rotate-0"}`}
+          />
         </div>
         {/* ANSWER */}
-        <div ref={contentRef} style={{ height: open ? `${contentRef.current?.scrollHeight}px` : "0px"}} className="overflow-hidden transition-[height] duration-300 ease-in-out">
+        <div
+          ref={contentRef}
+          style={{ height: open ? `${contentRef.current?.scrollHeight}px` : "0px" }}
+          className="overflow-hidden transition-[height] duration-300 ease-in-out"
+        >
           <div className="pt-4">{children}</div>
         </div>
       </div>

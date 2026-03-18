@@ -13,6 +13,6 @@ const Title = ({ icon: Icon, text }: TitleProps) => {
       <h2 className="text-gold w-full font-cormorant text-5xl md:text-7xl leading-none">{text}</h2>
     </div>
   );
-}
+};
 
 export default Title;

@@ -25,19 +25,19 @@ export default function Contact() {
     reset,
   } = useForm<FormData>();
 
-  const isGuest = watch('guest', false);
+  const isGuest = watch("guest", false);
 
   const transformData = (data: FormData) => {
     return {
       ...data,
-      guest: data.guest ? 'Sí' : 'No',
-      bus: data.bus ? 'Sí' : 'No',
-      preparty: data.preparty ? 'Sí' : 'No',
-      guest_name: data.guest ? data.guest_name || 'CAMPO NO RELLENADO' : 'N/A',
-      guest_surname: data.guest ? data.guest_surname || 'CAMPO NO RELLENADO' : 'N/A',
-      surname: data.surname || 'CAMPO NO RELLENADO',
-      phone: data.phone || 'CAMPO NO RELLENADO',
-      allergies: data.allergies || 'CAMPO NO RELLENADO',
+      guest: data.guest ? "Sí" : "No",
+      bus: data.bus ? "Sí" : "No",
+      preparty: data.preparty ? "Sí" : "No",
+      guest_name: data.guest ? data.guest_name || "CAMPO NO RELLENADO" : "N/A",
+      guest_surname: data.guest ? data.guest_surname || "CAMPO NO RELLENADO" : "N/A",
+      surname: data.surname || "CAMPO NO RELLENADO",
+      phone: data.phone || "CAMPO NO RELLENADO",
+      allergies: data.allergies || "CAMPO NO RELLENADO",
     };
   };
 
@@ -63,14 +63,13 @@ export default function Contact() {
 
   return (
     <section className="bg-[#f7f4ef] py-10 md:py-20 rounded-lg">
-      <form
-        className="w-11/12 md:w-6/12 m-auto"
-        onSubmit={handleSubmit(onSubmit)}
-      >
+      <form className="w-11/12 md:w-6/12 m-auto" onSubmit={handleSubmit(onSubmit)}>
         {/* Nombre */}
         <div className="mb-6">
           {errors.name && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.name.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.name.message}
+            </p>
           )}
           <input
             autoComplete="off"
@@ -83,7 +82,9 @@ export default function Contact() {
         {/* Apellidos */}
         <div className="mb-6">
           {errors.surname && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.surname.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.surname.message}
+            </p>
           )}
           <input
             autoComplete="off"
@@ -96,7 +97,9 @@ export default function Contact() {
         {/* Email */}
         <div className="mb-6">
           {errors.email && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.email.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.email.message}
+            </p>
           )}
           <input
             autoComplete="off"
@@ -115,7 +118,9 @@ export default function Contact() {
         {/* Teléfono */}
         <div className="mb-6">
           {errors.phone && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.phone.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.phone.message}
+            </p>
           )}
           <input
             autoComplete="off"
@@ -128,10 +133,17 @@ export default function Contact() {
         {/* Acompañante */}
         <div className="mb-6">
           {errors.guest && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.guest.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.guest.message}
+            </p>
           )}
           <label className="font-inter font-normal text-lg flex items-center gap-4">
-            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("guest")} /> Acompañante
+            <input
+              type="checkbox"
+              className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold"
+              {...register("guest")}
+            />{" "}
+            Acompañante
           </label>
         </div>
         {/* Nombre y Apellidos del Acompañante */}
@@ -139,7 +151,9 @@ export default function Contact() {
           <>
             <div className="mb-6">
               {errors.guest_name && (
-                <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.guest_name.message}</p>
+                <p className="text-red-500 font-inter font-normal text-lg mb-2">
+                  {errors.guest_name.message}
+                </p>
               )}
               <input
                 autoComplete="off"
@@ -173,23 +187,36 @@ export default function Contact() {
             <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.bus.message}</p>
           )}
           <label className="font-inter font-normal text-lg flex items-center gap-4">
-            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("bus")} /> Utilizaré autobús
+            <input
+              type="checkbox"
+              className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold"
+              {...register("bus")}
+            />{" "}
+            Utilizaré autobús
           </label>
         </div>
         {/* Asistiré a la espicha */}
         <div className="mb-6">
           {errors.preparty && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.preparty.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.preparty.message}
+            </p>
           )}
           <label className="font-inter font-normal text-lg flex items-center gap-4">
-            <input type="checkbox" className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold" {...register("preparty")} /> Asistiré a la
-            espicha
+            <input
+              type="checkbox"
+              className="appearance-none bg-white rounded-sm size-4 checked:bg-gold outline outline-transparent checked:outline-gold border border-[#D9D9D9] checked:border-white checked:border-2 focus:outline-gold"
+              {...register("preparty")}
+            />{" "}
+            Asistiré a la espicha
           </label>
         </div>
         {/* Alergias o especialidades */}
         <div className="mb-6">
           {errors.allergies && (
-            <p className="text-red-500 font-inter font-normal text-lg mb-2">{errors.allergies.message}</p>
+            <p className="text-red-500 font-inter font-normal text-lg mb-2">
+              {errors.allergies.message}
+            </p>
           )}
           <textarea
             className="w-full font-inter font-normal text-lg p-3 rounded focus:outline-gold border border-[#D9D9D9] field-sizing-content"
@@ -210,5 +237,5 @@ export default function Contact() {
         </div>
       </form>
     </section>
-  ); 
+  );
 }
